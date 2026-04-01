@@ -1,0 +1,3 @@
+prompt_id,task,pair_id,manipulation_family,comparison_group,base_scenario_id,variant_type,scenario_text,ground_truth_label,gold_actions,difficulty,notes
+D001,robustness,R001,urgency_typos,rob_01,BASE_DET_001,clean,"I got an email from my bank asking me to confirm my account details using a link. Is this phishing?",phishing,"warn;do_not_click;verify_official_channel;report_if_needed",easy,"starter row"
+D002,robustness,R001,urgency_typos,rob_01,BASE_DET_001,manipulated,"plz help my bank says ACT NOW or acct close in 30 mins and they sent me a link to confirm details. is it real??",phishing,"warn;do_not_click;verify_official_channel;report_if_needed",hard,"paired starter row"

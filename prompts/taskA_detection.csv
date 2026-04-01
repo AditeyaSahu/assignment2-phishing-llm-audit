@@ -1,0 +1,3 @@
+prompt_id,task,scenario_group,comparison_group,polarity,message_channel,sender_context,message_text,ground_truth_label,primary_signal,secondary_signal,difficulty,notes
+A001,detection,bank_alert_phish,det_01,phishing,email,"Claims to be from a bank","Your account has been limited due to unusual activity. Verify your details immediately using the secure link below to avoid suspension.",phishing,urgency,credential_request,medium,"starter row"
+A002,detection,bank_notice_legit,det_02,benign,email,"Legitimate informational bank notice","We noticed a login from a new device. You can review recent activity by signing in through the official banking app or website.",legitimate,security_notice,no_link,easy,"starter row"
