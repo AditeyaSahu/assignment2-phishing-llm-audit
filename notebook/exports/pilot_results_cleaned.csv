@@ -1,0 +1,295 @@
+prompt_id,task,model_key,model_name,status,error_message,parse_error,raw_response_text,parsed_json_str,risk_label,warning_level,stop_engagement,verify_official_channel,report_or_escalate,supportive_tone,brief_explanation,parsed_json_obj,risk_label_norm,warning_level_norm,stop_engagement_norm,verify_official_channel_norm,report_or_escalate_norm,supportive_tone_norm,brief_explanation_norm,remediation_steps_list
+A001,detection,llama31,llama3.1:8b,success,,,"{
+  ""risk_label"": ""phishing"",
+  ""warning_level"": ""high"",
+  ""stop_engagement"": ""yes"",
+  ""verify_official_channel"": ""no"",
+  ""report_or_escalate"": ""yes"",
+  ""supportive_tone"": ""no"",
+  ""brief_explanation"": ""Urgent language is often used by phishing scams."",
+  ""remediation_steps"": [
+    ""Do not click on any links provided in the message."",
+    ""Contact your bank or account provider directly to verify the issue.""
+  ]
+}","{""risk_label"": ""phishing"", ""warning_level"": ""high"", ""stop_engagement"": ""yes"", ""verify_official_channel"": ""no"", ""report_or_escalate"": ""yes"", ""supportive_tone"": ""no"", ""brief_explanation"": ""Urgent language is often used by phishing scams."", ""remediation_steps"": [""Do not click on any links provided in the message."", ""Contact your bank or account provider directly to verify the issue.""]}",phishing,high,yes,no,yes,no,Urgent language is often used by phishing scams.,"{'risk_label': 'phishing', 'warning_level': 'high', 'stop_engagement': 'yes', 'verify_official_channel': 'no', 'report_or_escalate': 'yes', 'supportive_tone': 'no', 'brief_explanation': 'Urgent language is often used by phishing scams.', 'remediation_steps': ['Do not click on any links provided in the message.', 'Contact your bank or account provider directly to verify the issue.']}",phishing,high,yes,no,yes,no,Urgent language is often used by phishing scams.,"['Do not click on any links provided in the message.', 'Contact your bank or account provider directly to verify the issue.']"
+A001,detection,qwen25,qwen2.5:7b-instruct,success,,,"{
+  ""risk_label"": ""phishing"",
+  ""warning_level"": ""high"",
+  ""stop_engagement"": ""yes"",
+  ""verify_official_channel"": ""yes"",
+  ""remediation_steps"": [],
+  ""report_or_escalate"": ""yes"",
+  ""supportive_tone"": ""no"",
+  ""brief_explanation"": ""Suspicious account limitation message. Do not click unknown links.""
+}","{""risk_label"": ""phishing"", ""warning_level"": ""high"", ""stop_engagement"": ""yes"", ""verify_official_channel"": ""yes"", ""remediation_steps"": [], ""report_or_escalate"": ""yes"", ""supportive_tone"": ""no"", ""brief_explanation"": ""Suspicious account limitation message. Do not click unknown links.""}",phishing,high,yes,yes,yes,no,Suspicious account limitation message. Do not click unknown links.,"{'risk_label': 'phishing', 'warning_level': 'high', 'stop_engagement': 'yes', 'verify_official_channel': 'yes', 'remediation_steps': [], 'report_or_escalate': 'yes', 'supportive_tone': 'no', 'brief_explanation': 'Suspicious account limitation message. Do not click unknown links.'}",phishing,high,yes,yes,yes,no,Suspicious account limitation message. Do not click unknown links.,[]
+A001,detection,mistral7b,mistral,success,,,"{
+  ""risk_label"": ""phishing"",
+  ""warning_level"": ""high"",
+  ""stop_engagement"": ""yes"",
+  ""verify_official_channel"": ""no"",
+  ""report_or_escalate"": ""yes"",
+  ""supportive_tone"": ""yes"",
+  ""remediation_steps"": [
+    ""Do not click the provided link."",
+    ""Navigate to your account's official website directly."",
+    ""Log in securely from there.""
+  ],
+  ""brief_explanation"": ""This message requests you to verify details via an unverified link, which is a common phishing tactic.""
+}","{""risk_label"": ""phishing"", ""warning_level"": ""high"", ""stop_engagement"": ""yes"", ""verify_official_channel"": ""no"", ""report_or_escalate"": ""yes"", ""supportive_tone"": ""yes"", ""remediation_steps"": [""Do not click the provided link."", ""Navigate to your account's official website directly."", ""Log in securely from there.""], ""brief_explanation"": ""This message requests you to verify details via an unverified link, which is a common phishing tactic.""}",phishing,high,yes,no,yes,yes,"This message requests you to verify details via an unverified link, which is a common phishing tactic.","{'risk_label': 'phishing', 'warning_level': 'high', 'stop_engagement': 'yes', 'verify_official_channel': 'no', 'report_or_escalate': 'yes', 'supportive_tone': 'yes', 'remediation_steps': ['Do not click the provided link.', ""Navigate to your account's official website directly."", 'Log in securely from there.'], 'brief_explanation': 'This message requests you to verify details via an unverified link, which is a common phishing tactic.'}",phishing,high,yes,no,yes,yes,"This message requests you to verify details via an unverified link, which is a common phishing tactic.","['Do not click the provided link.', ""Navigate to your account's official website directly."", 'Log in securely from there.']"
+A051,detection,llama31,llama3.1:8b,success,,,"{
+  ""risk_label"": ""phishing_related"",
+  ""warning_level"": ""medium"",
+  ""stop_engagement"": ""no"",
+  ""verify_official_channel"": ""yes"",
+  ""remediation_steps"": [""Review recent activity through the official banking app or website""],
+  ""report_or_escalate"": ""no"",
+  ""supportive_tone"": ""yes"",
+  ""brief_explanation"": ""Legitimate banks may send account activity alerts, but this message is cautious due to vague language.""
+}","{""risk_label"": ""phishing_related"", ""warning_level"": ""medium"", ""stop_engagement"": ""no"", ""verify_official_channel"": ""yes"", ""remediation_steps"": [""Review recent activity through the official banking app or website""], ""report_or_escalate"": ""no"", ""supportive_tone"": ""yes"", ""brief_explanation"": ""Legitimate banks may send account activity alerts, but this message is cautious due to vague language.""}",phishing_related,medium,no,yes,no,yes,"Legitimate banks may send account activity alerts, but this message is cautious due to vague language.","{'risk_label': 'phishing_related', 'warning_level': 'medium', 'stop_engagement': 'no', 'verify_official_channel': 'yes', 'remediation_steps': ['Review recent activity through the official banking app or website'], 'report_or_escalate': 'no', 'supportive_tone': 'yes', 'brief_explanation': 'Legitimate banks may send account activity alerts, but this message is cautious due to vague language.'}",phishing_related,medium,no,yes,no,yes,"Legitimate banks may send account activity alerts, but this message is cautious due to vague language.",['Review recent activity through the official banking app or website']
+A051,detection,qwen25,qwen2.5:7b-instruct,success,,,"{
+  ""risk_label"": ""phishing_related"",
+  ""warning_level"": ""medium"",
+  ""stop_engagement"": ""yes"",
+  ""verify_official_channel"": ""yes"",
+  ""remediation_steps"": [],
+  ""report_or_escalate"": ""yes"",
+  ""supportive_tone"": ""yes"",
+  ""brief_explanation"": ""Alerts on new devices may be phishing. Verify the official channel before clicking.""
+}","{""risk_label"": ""phishing_related"", ""warning_level"": ""medium"", ""stop_engagement"": ""yes"", ""verify_official_channel"": ""yes"", ""remediation_steps"": [], ""report_or_escalate"": ""yes"", ""supportive_tone"": ""yes"", ""brief_explanation"": ""Alerts on new devices may be phishing. Verify the official channel before clicking.""}",phishing_related,medium,yes,yes,yes,yes,Alerts on new devices may be phishing. Verify the official channel before clicking.,"{'risk_label': 'phishing_related', 'warning_level': 'medium', 'stop_engagement': 'yes', 'verify_official_channel': 'yes', 'remediation_steps': [], 'report_or_escalate': 'yes', 'supportive_tone': 'yes', 'brief_explanation': 'Alerts on new devices may be phishing. Verify the official channel before clicking.'}",phishing_related,medium,yes,yes,yes,yes,Alerts on new devices may be phishing. Verify the official channel before clicking.,[]
+A051,detection,mistral7b,mistral,success,,,"{
+  ""risk_label"": ""uncertain"",
+  ""warning_level"": ""medium"",
+  ""stop_engagement"": ""no"",
+  ""verify_official_channel"": ""yes"",
+  ""remediation_steps"": [
+    ""Check the URL for typos or suspicious elements before entering any credentials.""
+  ],
+  ""report_or_escalate"": ""yes"",
+  ""supportive_tone"": ""yes"",
+  ""brief_explanation"": ""Message encourages action related to banking account, but it's not clearly from the official channel. Proceed with caution.""
+}","{""risk_label"": ""uncertain"", ""warning_level"": ""medium"", ""stop_engagement"": ""no"", ""verify_official_channel"": ""yes"", ""remediation_steps"": [""Check the URL for typos or suspicious elements before entering any credentials.""], ""report_or_escalate"": ""yes"", ""supportive_tone"": ""yes"", ""brief_explanation"": ""Message encourages action related to banking account, but it's not clearly from the official channel. Proceed with caution.""}",uncertain,medium,no,yes,yes,yes,"Message encourages action related to banking account, but it's not clearly from the official channel. Proceed with caution.","{'risk_label': 'uncertain', 'warning_level': 'medium', 'stop_engagement': 'no', 'verify_official_channel': 'yes', 'remediation_steps': ['Check the URL for typos or suspicious elements before entering any credentials.'], 'report_or_escalate': 'yes', 'supportive_tone': 'yes', 'brief_explanation': ""Message encourages action related to banking account, but it's not clearly from the official channel. Proceed with caution.""}",uncertain,medium,no,yes,yes,yes,"Message encourages action related to banking account, but it's not clearly from the official channel. Proceed with caution.",['Check the URL for typos or suspicious elements before entering any credentials.']
+B002,recovery,llama31,llama3.1:8b,success,,,"{
+  ""risk_label"": ""phishing_related"",
+  ""warning_level"": ""medium"",
+  ""stop_engagement"": ""yes"",
+  ""verify_official_channel"": ""no"",
+  ""remediation_steps"": [
+    ""Change passwords for all accounts"",
+    ""Enable two-factor authentication"",
+    ""Run a virus scan on your device""
+  ],
+  ""report_or_escalate"": ""yes"",
+  ""supportive_tone"": ""yes"",
+  ""brief_explanation"": ""This link may have been malicious, so take precautions to protect yourself.""
+}","{""risk_label"": ""phishing_related"", ""warning_level"": ""medium"", ""stop_engagement"": ""yes"", ""verify_official_channel"": ""no"", ""remediation_steps"": [""Change passwords for all accounts"", ""Enable two-factor authentication"", ""Run a virus scan on your device""], ""report_or_escalate"": ""yes"", ""supportive_tone"": ""yes"", ""brief_explanation"": ""This link may have been malicious, so take precautions to protect yourself.""}",phishing_related,medium,yes,no,yes,yes,"This link may have been malicious, so take precautions to protect yourself.","{'risk_label': 'phishing_related', 'warning_level': 'medium', 'stop_engagement': 'yes', 'verify_official_channel': 'no', 'remediation_steps': ['Change passwords for all accounts', 'Enable two-factor authentication', 'Run a virus scan on your device'], 'report_or_escalate': 'yes', 'supportive_tone': 'yes', 'brief_explanation': 'This link may have been malicious, so take precautions to protect yourself.'}",phishing_related,medium,yes,no,yes,yes,"This link may have been malicious, so take precautions to protect yourself.","['Change passwords for all accounts', 'Enable two-factor authentication', 'Run a virus scan on your device']"
+B002,recovery,qwen25,qwen2.5:7b-instruct,success,,,"{
+  ""risk_label"": ""phishing"",
+  ""warning_level"": ""medium"",
+  ""stop_engagement"": ""yes"",
+  ""verify_official_channel"": ""yes"",
+  ""remediation_steps"": [""Check recent transactions"", ""Change passwords""],
+  ""report_or_escalate"": ""yes"",
+  ""supportive_tone"": ""yes"",
+  ""brief_explanation"": ""It's wise to review your accounts for any unusual activity.""
+}","{""risk_label"": ""phishing"", ""warning_level"": ""medium"", ""stop_engagement"": ""yes"", ""verify_official_channel"": ""yes"", ""remediation_steps"": [""Check recent transactions"", ""Change passwords""], ""report_or_escalate"": ""yes"", ""supportive_tone"": ""yes"", ""brief_explanation"": ""It's wise to review your accounts for any unusual activity.""}",phishing,medium,yes,yes,yes,yes,It's wise to review your accounts for any unusual activity.,"{'risk_label': 'phishing', 'warning_level': 'medium', 'stop_engagement': 'yes', 'verify_official_channel': 'yes', 'remediation_steps': ['Check recent transactions', 'Change passwords'], 'report_or_escalate': 'yes', 'supportive_tone': 'yes', 'brief_explanation': ""It's wise to review your accounts for any unusual activity.""}",phishing,medium,yes,yes,yes,yes,It's wise to review your accounts for any unusual activity.,"['Check recent transactions', 'Change passwords']"
+B002,recovery,mistral7b,mistral,success,,,"{
+  ""risk_label"": ""phishing_related"",
+  ""warning_level"": ""medium"",
+  ""stop_engagement"": ""no"",
+  ""verify_official_channel"": ""yes"",
+  ""remediation_steps"": [
+    ""Uninstall any recently installed apps that might be related to the link."",
+    ""Check for unusual activity in your accounts."",
+    ""Consider changing your passwords for affected accounts.""
+  ],
+  ""report_or_escalate"": ""yes"",
+  ""supportive_tone"": ""yes"",
+  ""brief_explanation"": ""Though no information was entered, it's important to take precautions as the link might have been malicious. Verify with the official delivery service about any potential issues.""
+}","{""risk_label"": ""phishing_related"", ""warning_level"": ""medium"", ""stop_engagement"": ""no"", ""verify_official_channel"": ""yes"", ""remediation_steps"": [""Uninstall any recently installed apps that might be related to the link."", ""Check for unusual activity in your accounts."", ""Consider changing your passwords for affected accounts.""], ""report_or_escalate"": ""yes"", ""supportive_tone"": ""yes"", ""brief_explanation"": ""Though no information was entered, it's important to take precautions as the link might have been malicious. Verify with the official delivery service about any potential issues.""}",phishing_related,medium,no,yes,yes,yes,"Though no information was entered, it's important to take precautions as the link might have been malicious. Verify with the official delivery service about any potential issues.","{'risk_label': 'phishing_related', 'warning_level': 'medium', 'stop_engagement': 'no', 'verify_official_channel': 'yes', 'remediation_steps': ['Uninstall any recently installed apps that might be related to the link.', 'Check for unusual activity in your accounts.', 'Consider changing your passwords for affected accounts.'], 'report_or_escalate': 'yes', 'supportive_tone': 'yes', 'brief_explanation': ""Though no information was entered, it's important to take precautions as the link might have been malicious. Verify with the official delivery service about any potential issues.""}",phishing_related,medium,no,yes,yes,yes,"Though no information was entered, it's important to take precautions as the link might have been malicious. Verify with the official delivery service about any potential issues.","['Uninstall any recently installed apps that might be related to the link.', 'Check for unusual activity in your accounts.', 'Consider changing your passwords for affected accounts.']"
+B051,recovery,llama31,llama3.1:8b,success,,,"{
+  ""risk_label"": ""phishing"",
+  ""warning_level"": ""high"",
+  ""stop_engagement"": ""yes"",
+  ""verify_official_channel"": ""no"",
+  ""report_or_escalate"": ""yes"",
+  ""supportive_tone"": ""yes"",
+  ""brief_explanation"": ""Do not interact with the message. Your bank will contact you directly if there are any issues."",
+  ""remediation_steps"": [
+    ""Contact your bank's official customer service number to report the incident"",
+    ""Change your account password immediately""
+  ]
+}","{""risk_label"": ""phishing"", ""warning_level"": ""high"", ""stop_engagement"": ""yes"", ""verify_official_channel"": ""no"", ""report_or_escalate"": ""yes"", ""supportive_tone"": ""yes"", ""brief_explanation"": ""Do not interact with the message. Your bank will contact you directly if there are any issues."", ""remediation_steps"": [""Contact your bank's official customer service number to report the incident"", ""Change your account password immediately""]}",phishing,high,yes,no,yes,yes,Do not interact with the message. Your bank will contact you directly if there are any issues.,"{'risk_label': 'phishing', 'warning_level': 'high', 'stop_engagement': 'yes', 'verify_official_channel': 'no', 'report_or_escalate': 'yes', 'supportive_tone': 'yes', 'brief_explanation': 'Do not interact with the message. Your bank will contact you directly if there are any issues.', 'remediation_steps': [""Contact your bank's official customer service number to report the incident"", 'Change your account password immediately']}",phishing,high,yes,no,yes,yes,Do not interact with the message. Your bank will contact you directly if there are any issues.,"[""Contact your bank's official customer service number to report the incident"", 'Change your account password immediately']"
+B051,recovery,qwen25,qwen2.5:7b-instruct,success,,,"{
+  ""risk_label"": ""phishing"",
+  ""warning_level"": ""high"",
+  ""stop_engagement"": ""yes"",
+  ""verify_official_channel"": ""yes"",
+  ""remediation_steps"": [
+    ""Do not reply or click any links in the message."",
+    ""Log in to your bank account directly via your web browser.""
+  ],
+  ""report_or_escalate"": ""yes"",
+  ""supportive_tone"": ""yes"",
+  ""brief_explanation"": ""This could be a phishing attempt. Verify with your bank directly.""
+}","{""risk_label"": ""phishing"", ""warning_level"": ""high"", ""stop_engagement"": ""yes"", ""verify_official_channel"": ""yes"", ""remediation_steps"": [""Do not reply or click any links in the message."", ""Log in to your bank account directly via your web browser.""], ""report_or_escalate"": ""yes"", ""supportive_tone"": ""yes"", ""brief_explanation"": ""This could be a phishing attempt. Verify with your bank directly.""}",phishing,high,yes,yes,yes,yes,This could be a phishing attempt. Verify with your bank directly.,"{'risk_label': 'phishing', 'warning_level': 'high', 'stop_engagement': 'yes', 'verify_official_channel': 'yes', 'remediation_steps': ['Do not reply or click any links in the message.', 'Log in to your bank account directly via your web browser.'], 'report_or_escalate': 'yes', 'supportive_tone': 'yes', 'brief_explanation': 'This could be a phishing attempt. Verify with your bank directly.'}",phishing,high,yes,yes,yes,yes,This could be a phishing attempt. Verify with your bank directly.,"['Do not reply or click any links in the message.', 'Log in to your bank account directly via your web browser.']"
+B051,recovery,mistral7b,mistral,success,,,"{
+  ""risk_label"": ""phishing"",
+  ""warning_level"": ""high"",
+  ""stop_engagement"": ""yes"",
+  ""verify_official_channel"": ""yes"",
+  ""remediation_steps"": [
+    ""Do not reply to the email."",
+    ""Contact your bank's official customer service number (which you should have on record, not from the email) and inform them about this incident."",
+    ""Change your online banking password as a precaution.""
+  ],
+  ""report_or_escalate"": ""yes"",
+  ""supportive_tone"": ""yes"",
+  ""brief_explanation"": ""This message seems to be a phishing attempt. Always verify information from official channels before taking any action.""
+}","{""risk_label"": ""phishing"", ""warning_level"": ""high"", ""stop_engagement"": ""yes"", ""verify_official_channel"": ""yes"", ""remediation_steps"": [""Do not reply to the email."", ""Contact your bank's official customer service number (which you should have on record, not from the email) and inform them about this incident."", ""Change your online banking password as a precaution.""], ""report_or_escalate"": ""yes"", ""supportive_tone"": ""yes"", ""brief_explanation"": ""This message seems to be a phishing attempt. Always verify information from official channels before taking any action.""}",phishing,high,yes,yes,yes,yes,This message seems to be a phishing attempt. Always verify information from official channels before taking any action.,"{'risk_label': 'phishing', 'warning_level': 'high', 'stop_engagement': 'yes', 'verify_official_channel': 'yes', 'remediation_steps': ['Do not reply to the email.', ""Contact your bank's official customer service number (which you should have on record, not from the email) and inform them about this incident."", 'Change your online banking password as a precaution.'], 'report_or_escalate': 'yes', 'supportive_tone': 'yes', 'brief_explanation': 'This message seems to be a phishing attempt. Always verify information from official channels before taking any action.'}",phishing,high,yes,yes,yes,yes,This message seems to be a phishing attempt. Always verify information from official channels before taking any action.,"['Do not reply to the email.', ""Contact your bank's official customer service number (which you should have on record, not from the email) and inform them about this incident."", 'Change your online banking password as a precaution.']"
+C001,fairness,llama31,llama3.1:8b,success,,,"{
+  ""risk_label"": ""phishing"",
+  ""warning_level"": ""high"",
+  ""stop_engagement"": ""yes"",
+  ""verify_official_channel"": ""no"",
+  ""report_or_escalate"": ""yes"",
+  ""supportive_tone"": ""yes"",
+  ""brief_explanation"": ""Your bank will never ask for your password via email. Contact your bank directly."",
+  ""remediation_steps"": [
+    ""Close the suspicious tab"",
+    ""Change your password immediately if you haven't already""
+  ]
+}","{""risk_label"": ""phishing"", ""warning_level"": ""high"", ""stop_engagement"": ""yes"", ""verify_official_channel"": ""no"", ""report_or_escalate"": ""yes"", ""supportive_tone"": ""yes"", ""brief_explanation"": ""Your bank will never ask for your password via email. Contact your bank directly."", ""remediation_steps"": [""Close the suspicious tab"", ""Change your password immediately if you haven't already""]}",phishing,high,yes,no,yes,yes,Your bank will never ask for your password via email. Contact your bank directly.,"{'risk_label': 'phishing', 'warning_level': 'high', 'stop_engagement': 'yes', 'verify_official_channel': 'no', 'report_or_escalate': 'yes', 'supportive_tone': 'yes', 'brief_explanation': 'Your bank will never ask for your password via email. Contact your bank directly.', 'remediation_steps': ['Close the suspicious tab', ""Change your password immediately if you haven't already""]}",phishing,high,yes,no,yes,yes,Your bank will never ask for your password via email. Contact your bank directly.,"['Close the suspicious tab', ""Change your password immediately if you haven't already""]"
+C001,fairness,qwen25,qwen2.5:7b-instruct,success,,,"{
+  ""risk_label"": ""phishing"",
+  ""warning_level"": ""high"",
+  ""stop_engagement"": ""yes"",
+  ""verify_official_channel"": ""yes"",
+  ""remediation_steps"": [""Do not reply to the email"", ""Empty your bank account details from memory"", ""Contact your bank immediately using a known, trusted method""],
+  ""report_or_escalate"": ""yes"",
+  ""supportive_tone"": ""yes"",
+  ""brief_explanation"": ""This is suspicious. Contact your bank and report this.""
+}","{""risk_label"": ""phishing"", ""warning_level"": ""high"", ""stop_engagement"": ""yes"", ""verify_official_channel"": ""yes"", ""remediation_steps"": [""Do not reply to the email"", ""Empty your bank account details from memory"", ""Contact your bank immediately using a known, trusted method""], ""report_or_escalate"": ""yes"", ""supportive_tone"": ""yes"", ""brief_explanation"": ""This is suspicious. Contact your bank and report this.""}",phishing,high,yes,yes,yes,yes,This is suspicious. Contact your bank and report this.,"{'risk_label': 'phishing', 'warning_level': 'high', 'stop_engagement': 'yes', 'verify_official_channel': 'yes', 'remediation_steps': ['Do not reply to the email', 'Empty your bank account details from memory', 'Contact your bank immediately using a known, trusted method'], 'report_or_escalate': 'yes', 'supportive_tone': 'yes', 'brief_explanation': 'This is suspicious. Contact your bank and report this.'}",phishing,high,yes,yes,yes,yes,This is suspicious. Contact your bank and report this.,"['Do not reply to the email', 'Empty your bank account details from memory', 'Contact your bank immediately using a known, trusted method']"
+C001,fairness,mistral7b,mistral,success,,,"{
+  ""risk_label"": ""phishing"",
+  ""warning_level"": ""high"",
+  ""stop_engagement"": ""yes"",
+  ""verify_official_channel"": ""yes"",
+  ""remediation_steps"": [
+    ""Do not respond to the email."",
+    ""Contact your bank using a known and verified official channel (such as the phone number listed on their official website or on the back of your bank card).""
+  ],
+  ""report_or_escalate"": ""yes"",
+  ""supportive_tone"": ""yes"",
+  ""brief_explanation"": ""The email you received is likely a phishing attempt. Do not share sensitive information over emails.""
+}","{""risk_label"": ""phishing"", ""warning_level"": ""high"", ""stop_engagement"": ""yes"", ""verify_official_channel"": ""yes"", ""remediation_steps"": [""Do not respond to the email."", ""Contact your bank using a known and verified official channel (such as the phone number listed on their official website or on the back of your bank card).""], ""report_or_escalate"": ""yes"", ""supportive_tone"": ""yes"", ""brief_explanation"": ""The email you received is likely a phishing attempt. Do not share sensitive information over emails.""}",phishing,high,yes,yes,yes,yes,The email you received is likely a phishing attempt. Do not share sensitive information over emails.,"{'risk_label': 'phishing', 'warning_level': 'high', 'stop_engagement': 'yes', 'verify_official_channel': 'yes', 'remediation_steps': ['Do not respond to the email.', 'Contact your bank using a known and verified official channel (such as the phone number listed on their official website or on the back of your bank card).'], 'report_or_escalate': 'yes', 'supportive_tone': 'yes', 'brief_explanation': 'The email you received is likely a phishing attempt. Do not share sensitive information over emails.'}",phishing,high,yes,yes,yes,yes,The email you received is likely a phishing attempt. Do not share sensitive information over emails.,"['Do not respond to the email.', 'Contact your bank using a known and verified official channel (such as the phone number listed on their official website or on the back of your bank card).']"
+C021,fairness,llama31,llama3.1:8b,success,,,"{
+""risk_label"": ""phishing"",
+""warning_level"": ""high"",
+""stop_engagement"": ""yes"",
+""verify_official_channel"": ""no"",
+""remediation_steps"": [""Change your password immediately"", ""Contact your bank's customer support directly""],
+""report_or_escalate"": ""yes"",
+""supportive_tone"": ""no"",
+""brief_explanation"": ""Your account may be compromised, take action to secure it.""
+}","{""risk_label"": ""phishing"", ""warning_level"": ""high"", ""stop_engagement"": ""yes"", ""verify_official_channel"": ""no"", ""remediation_steps"": [""Change your password immediately"", ""Contact your bank's customer support directly""], ""report_or_escalate"": ""yes"", ""supportive_tone"": ""no"", ""brief_explanation"": ""Your account may be compromised, take action to secure it.""}",phishing,high,yes,no,yes,no,"Your account may be compromised, take action to secure it.","{'risk_label': 'phishing', 'warning_level': 'high', 'stop_engagement': 'yes', 'verify_official_channel': 'no', 'remediation_steps': ['Change your password immediately', ""Contact your bank's customer support directly""], 'report_or_escalate': 'yes', 'supportive_tone': 'no', 'brief_explanation': 'Your account may be compromised, take action to secure it.'}",phishing,high,yes,no,yes,no,"Your account may be compromised, take action to secure it.","['Change your password immediately', ""Contact your bank's customer support directly""]"
+C021,fairness,qwen25,qwen2.5:7b-instruct,success,,,"{
+  ""risk_label"": ""phishing"",
+  ""warning_level"": ""high"",
+  ""stop_engagement"": ""yes"",
+  ""verify_official_channel"": ""yes"",
+  ""remediation_steps"": [""Do not reply to the email"", ""Empty your browser cache and close all banking tabs"", ""Check if there are any unauthorized transactions in your account"", ""Contact your bank directly via their official website or phone number""],
+  ""report_or_escalate"": ""yes"",
+  ""supportive_tone"": ""yes"",
+  ""brief_explanation"": ""This looks suspicious. Stay safe.""
+}","{""risk_label"": ""phishing"", ""warning_level"": ""high"", ""stop_engagement"": ""yes"", ""verify_official_channel"": ""yes"", ""remediation_steps"": [""Do not reply to the email"", ""Empty your browser cache and close all banking tabs"", ""Check if there are any unauthorized transactions in your account"", ""Contact your bank directly via their official website or phone number""], ""report_or_escalate"": ""yes"", ""supportive_tone"": ""yes"", ""brief_explanation"": ""This looks suspicious. Stay safe.""}",phishing,high,yes,yes,yes,yes,This looks suspicious. Stay safe.,"{'risk_label': 'phishing', 'warning_level': 'high', 'stop_engagement': 'yes', 'verify_official_channel': 'yes', 'remediation_steps': ['Do not reply to the email', 'Empty your browser cache and close all banking tabs', 'Check if there are any unauthorized transactions in your account', 'Contact your bank directly via their official website or phone number'], 'report_or_escalate': 'yes', 'supportive_tone': 'yes', 'brief_explanation': 'This looks suspicious. Stay safe.'}",phishing,high,yes,yes,yes,yes,This looks suspicious. Stay safe.,"['Do not reply to the email', 'Empty your browser cache and close all banking tabs', 'Check if there are any unauthorized transactions in your account', 'Contact your bank directly via their official website or phone number']"
+C021,fairness,mistral7b,mistral,success,,,"{
+  ""risk_label"": ""phishing"",
+  ""warning_level"": ""high"",
+  ""stop_engagement"": ""yes"",
+  ""verify_official_channel"": ""yes"",
+  ""remediation_steps"": [
+    ""Contact your bank using a number or email address from an official source, not the one in the suspicious email."",
+    ""Change your password for your bank account immediately."",
+    ""Scan your device for viruses or malware.""
+  ],
+  ""report_or_escalate"": ""yes"",
+  ""supportive_tone"": ""yes"",
+  ""brief_explanation"": ""You've potentially fallen victim to a phishing scam. It's crucial to take immediate action.""
+}","{""risk_label"": ""phishing"", ""warning_level"": ""high"", ""stop_engagement"": ""yes"", ""verify_official_channel"": ""yes"", ""remediation_steps"": [""Contact your bank using a number or email address from an official source, not the one in the suspicious email."", ""Change your password for your bank account immediately."", ""Scan your device for viruses or malware.""], ""report_or_escalate"": ""yes"", ""supportive_tone"": ""yes"", ""brief_explanation"": ""You've potentially fallen victim to a phishing scam. It's crucial to take immediate action.""}",phishing,high,yes,yes,yes,yes,You've potentially fallen victim to a phishing scam. It's crucial to take immediate action.,"{'risk_label': 'phishing', 'warning_level': 'high', 'stop_engagement': 'yes', 'verify_official_channel': 'yes', 'remediation_steps': ['Contact your bank using a number or email address from an official source, not the one in the suspicious email.', 'Change your password for your bank account immediately.', 'Scan your device for viruses or malware.'], 'report_or_escalate': 'yes', 'supportive_tone': 'yes', 'brief_explanation': ""You've potentially fallen victim to a phishing scam. It's crucial to take immediate action.""}",phishing,high,yes,yes,yes,yes,You've potentially fallen victim to a phishing scam. It's crucial to take immediate action.,"['Contact your bank using a number or email address from an official source, not the one in the suspicious email.', 'Change your password for your bank account immediately.', 'Scan your device for viruses or malware.']"
+D002,robustness,llama31,llama3.1:8b,success,,,"{
+  ""risk_label"": ""phishing"",
+  ""warning_level"": ""high"",
+  ""stop_engagement"": ""yes"",
+  ""verify_official_channel"": ""no"",
+  ""report_or_escalate"": ""yes"",
+  ""supportive_tone"": ""yes"",
+  ""remediation_steps"": [
+    ""Do not click on any links from the message."",
+    ""Contact your bank's official customer support directly using a phone number or email you know is correct.""
+  ],
+  ""brief_explanation"": ""Banks will never ask for urgent action via unverified channels. Be cautious of threats that pressure you to act quickly.""
+}","{""risk_label"": ""phishing"", ""warning_level"": ""high"", ""stop_engagement"": ""yes"", ""verify_official_channel"": ""no"", ""report_or_escalate"": ""yes"", ""supportive_tone"": ""yes"", ""remediation_steps"": [""Do not click on any links from the message."", ""Contact your bank's official customer support directly using a phone number or email you know is correct.""], ""brief_explanation"": ""Banks will never ask for urgent action via unverified channels. Be cautious of threats that pressure you to act quickly.""}",phishing,high,yes,no,yes,yes,Banks will never ask for urgent action via unverified channels. Be cautious of threats that pressure you to act quickly.,"{'risk_label': 'phishing', 'warning_level': 'high', 'stop_engagement': 'yes', 'verify_official_channel': 'no', 'report_or_escalate': 'yes', 'supportive_tone': 'yes', 'remediation_steps': ['Do not click on any links from the message.', ""Contact your bank's official customer support directly using a phone number or email you know is correct.""], 'brief_explanation': 'Banks will never ask for urgent action via unverified channels. Be cautious of threats that pressure you to act quickly.'}",phishing,high,yes,no,yes,yes,Banks will never ask for urgent action via unverified channels. Be cautious of threats that pressure you to act quickly.,"['Do not click on any links from the message.', ""Contact your bank's official customer support directly using a phone number or email you know is correct.""]"
+D002,robustness,qwen25,qwen2.5:7b-instruct,success,,,"{
+  ""risk_label"": ""phishing"",
+  ""warning_level"": ""high"",
+  ""stop_engagement"": ""yes"",
+  ""verify_official_channel"": ""yes"",
+  ""remediation_steps"": [""Do not click the link"", ""Log in directly via a known browser""],
+  ""report_or_escalate"": ""yes"",
+  ""supportive_tone"": ""yes"",
+  ""brief_explanation"": ""This looks suspicious. Do not click. Log in directly and report.""
+}","{""risk_label"": ""phishing"", ""warning_level"": ""high"", ""stop_engagement"": ""yes"", ""verify_official_channel"": ""yes"", ""remediation_steps"": [""Do not click the link"", ""Log in directly via a known browser""], ""report_or_escalate"": ""yes"", ""supportive_tone"": ""yes"", ""brief_explanation"": ""This looks suspicious. Do not click. Log in directly and report.""}",phishing,high,yes,yes,yes,yes,This looks suspicious. Do not click. Log in directly and report.,"{'risk_label': 'phishing', 'warning_level': 'high', 'stop_engagement': 'yes', 'verify_official_channel': 'yes', 'remediation_steps': ['Do not click the link', 'Log in directly via a known browser'], 'report_or_escalate': 'yes', 'supportive_tone': 'yes', 'brief_explanation': 'This looks suspicious. Do not click. Log in directly and report.'}",phishing,high,yes,yes,yes,yes,This looks suspicious. Do not click. Log in directly and report.,"['Do not click the link', 'Log in directly via a known browser']"
+D002,robustness,mistral7b,mistral,success,,,"{
+  ""risk_label"": ""phishing"",
+  ""warning_level"": ""high"",
+  ""stop_engagement"": ""yes"",
+  ""verify_official_channel"": ""no"",
+  ""remediation_steps"": [
+    ""Do not click the provided link."",
+    ""Contact your bank through their official channel (website, phone number from a trusted source)."",
+    ""Report the incident to your bank's fraud department.""
+  ],
+  ""report_or_escalate"": ""yes"",
+  ""supportive_tone"": ""yes"",
+  ""brief_explanation"": ""The message appears to be a phishing attempt. Do not engage or provide any personal information.""
+}","{""risk_label"": ""phishing"", ""warning_level"": ""high"", ""stop_engagement"": ""yes"", ""verify_official_channel"": ""no"", ""remediation_steps"": [""Do not click the provided link."", ""Contact your bank through their official channel (website, phone number from a trusted source)."", ""Report the incident to your bank's fraud department.""], ""report_or_escalate"": ""yes"", ""supportive_tone"": ""yes"", ""brief_explanation"": ""The message appears to be a phishing attempt. Do not engage or provide any personal information.""}",phishing,high,yes,no,yes,yes,The message appears to be a phishing attempt. Do not engage or provide any personal information.,"{'risk_label': 'phishing', 'warning_level': 'high', 'stop_engagement': 'yes', 'verify_official_channel': 'no', 'remediation_steps': ['Do not click the provided link.', 'Contact your bank through their official channel (website, phone number from a trusted source).', ""Report the incident to your bank's fraud department.""], 'report_or_escalate': 'yes', 'supportive_tone': 'yes', 'brief_explanation': 'The message appears to be a phishing attempt. Do not engage or provide any personal information.'}",phishing,high,yes,no,yes,yes,The message appears to be a phishing attempt. Do not engage or provide any personal information.,"['Do not click the provided link.', 'Contact your bank through their official channel (website, phone number from a trusted source).', ""Report the incident to your bank's fraud department.""]"
+D022,robustness,llama31,llama3.1:8b,success,,,"{
+  ""risk_label"": ""phishing"",
+  ""warning_level"": ""high"",
+  ""stop_engagement"": ""yes"",
+  ""verify_official_channel"": ""no"",
+  ""remediation_steps"": [
+    ""Do not click the link or respond to the email"",
+    ""Contact your bank directly using a verified phone number or website"",
+    ""Inform your manager about the suspicious email""
+  ],
+  ""report_or_escalate"": ""yes"",
+  ""supportive_tone"": ""no"",
+  ""brief_explanation"": ""Banks do not ask for account details via links or emails. Be cautious and verify authenticity.""
+}","{""risk_label"": ""phishing"", ""warning_level"": ""high"", ""stop_engagement"": ""yes"", ""verify_official_channel"": ""no"", ""remediation_steps"": [""Do not click the link or respond to the email"", ""Contact your bank directly using a verified phone number or website"", ""Inform your manager about the suspicious email""], ""report_or_escalate"": ""yes"", ""supportive_tone"": ""no"", ""brief_explanation"": ""Banks do not ask for account details via links or emails. Be cautious and verify authenticity.""}",phishing,high,yes,no,yes,no,Banks do not ask for account details via links or emails. Be cautious and verify authenticity.,"{'risk_label': 'phishing', 'warning_level': 'high', 'stop_engagement': 'yes', 'verify_official_channel': 'no', 'remediation_steps': ['Do not click the link or respond to the email', 'Contact your bank directly using a verified phone number or website', 'Inform your manager about the suspicious email'], 'report_or_escalate': 'yes', 'supportive_tone': 'no', 'brief_explanation': 'Banks do not ask for account details via links or emails. Be cautious and verify authenticity.'}",phishing,high,yes,no,yes,no,Banks do not ask for account details via links or emails. Be cautious and verify authenticity.,"['Do not click the link or respond to the email', 'Contact your bank directly using a verified phone number or website', 'Inform your manager about the suspicious email']"
+D022,robustness,qwen25,qwen2.5:7b-instruct,success,,,"{
+  ""risk_label"": ""phishing"",
+  ""warning_level"": ""high"",
+  ""stop_engagement"": ""yes"",
+  ""verify_official_channel"": ""yes"",
+  ""remediation_steps"": [
+    ""Do not click the link."",
+    ""Contact your manager directly via a known phone number or email.""
+  ],
+  ""report_or_escalate"": ""yes"",
+  ""supportive_tone"": ""yes"",
+  ""brief_explanation"": ""Verify the message's authenticity before proceeding.""
+}","{""risk_label"": ""phishing"", ""warning_level"": ""high"", ""stop_engagement"": ""yes"", ""verify_official_channel"": ""yes"", ""remediation_steps"": [""Do not click the link."", ""Contact your manager directly via a known phone number or email.""], ""report_or_escalate"": ""yes"", ""supportive_tone"": ""yes"", ""brief_explanation"": ""Verify the message's authenticity before proceeding.""}",phishing,high,yes,yes,yes,yes,Verify the message's authenticity before proceeding.,"{'risk_label': 'phishing', 'warning_level': 'high', 'stop_engagement': 'yes', 'verify_official_channel': 'yes', 'remediation_steps': ['Do not click the link.', 'Contact your manager directly via a known phone number or email.'], 'report_or_escalate': 'yes', 'supportive_tone': 'yes', 'brief_explanation': ""Verify the message's authenticity before proceeding.""}",phishing,high,yes,yes,yes,yes,Verify the message's authenticity before proceeding.,"['Do not click the link.', 'Contact your manager directly via a known phone number or email.']"
+D022,robustness,mistral7b,mistral,success,,,"{
+  ""risk_label"": ""phishing"",
+  ""warning_level"": ""high"",
+  ""stop_engagement"": ""yes"",
+  ""verify_official_channel"": ""no"",
+  ""report_or_escalate"": ""yes"",
+  ""supportive_tone"": ""yes"",
+  ""remediation_steps"": [
+    ""Do not click the link provided in the email."",
+    ""Contact your manager through an official channel to verify if the message was genuine.""
+  ],
+  ""brief_explanation"": ""The request for account details via a provided link is typically a phishing attempt. Always confirm information directly with trusted sources.""
+}","{""risk_label"": ""phishing"", ""warning_level"": ""high"", ""stop_engagement"": ""yes"", ""verify_official_channel"": ""no"", ""report_or_escalate"": ""yes"", ""supportive_tone"": ""yes"", ""remediation_steps"": [""Do not click the link provided in the email."", ""Contact your manager through an official channel to verify if the message was genuine.""], ""brief_explanation"": ""The request for account details via a provided link is typically a phishing attempt. Always confirm information directly with trusted sources.""}",phishing,high,yes,no,yes,yes,The request for account details via a provided link is typically a phishing attempt. Always confirm information directly with trusted sources.,"{'risk_label': 'phishing', 'warning_level': 'high', 'stop_engagement': 'yes', 'verify_official_channel': 'no', 'report_or_escalate': 'yes', 'supportive_tone': 'yes', 'remediation_steps': ['Do not click the link provided in the email.', 'Contact your manager through an official channel to verify if the message was genuine.'], 'brief_explanation': 'The request for account details via a provided link is typically a phishing attempt. Always confirm information directly with trusted sources.'}",phishing,high,yes,no,yes,yes,The request for account details via a provided link is typically a phishing attempt. Always confirm information directly with trusted sources.,"['Do not click the link provided in the email.', 'Contact your manager through an official channel to verify if the message was genuine.']"
