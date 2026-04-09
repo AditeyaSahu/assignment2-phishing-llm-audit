@@ -1,0 +1,4 @@
+model_key,model_name,status,response_text
+llama31,llama3.1:8b,success,"Hello, I'm here and functioning as expected."
+qwen25,qwen2.5:7b-instruct,success,"Hello, I am online and ready to assist you!"
+mistral7b,mistral,success, Hello! I'm here and ready to assist. How can I help you today?
